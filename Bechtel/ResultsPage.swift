@@ -57,15 +57,6 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:CustomCell = tableView.dequeueReusableCell(withIdentifier: "cell")! as! CustomCell
         
-        //cell.textLabel?.text = self.items[indexPath.row]
-        cell.title.text = self.items[indexPath.row]
-        
-      //  if (cell == nil) {
-       //     cell = CustomCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-
-        //}
-        
-        //cell.movieImage.image = UIImage(named: "q")
         
         return cell
     }

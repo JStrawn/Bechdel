@@ -12,7 +12,6 @@ class CustomCell: UITableViewCell {
     
     var movieImage:UIImageView!
     var title:UILabel!
-    var items: [String] = ["Movie1", "Movie2", "Movie3"]
     var frm:CGRect!
 
 
@@ -23,13 +22,17 @@ class CustomCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        let gap : CGFloat = 10
-        let labelHeight: CGFloat = 30
-        let labelWidth: CGFloat = 150
+        //self.frame.height = ResultsPage().view.frame.height * 0.20
+        
+        let x: CGFloat = self.frame.minX
+        let y: CGFloat = self.frame.minY
+        
+        let imageViewHeight: CGFloat = self.frame.height
+        let imageViewWidth: CGFloat = self.frame.width * 0.20
         //let lineGap : CGFloat = 5
         
         movieImage = UIImageView()
-        movieImage.frame = CGRect(x:gap, y:gap, width:labelWidth, height:labelHeight)
+        movieImage.frame = CGRect(x:x, y:y, width:imageViewWidth, height:imageViewHeight)
         movieImage.image = UIImage(named: "q")
         self.addSubview(movieImage)
         
