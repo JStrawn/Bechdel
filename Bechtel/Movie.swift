@@ -10,17 +10,21 @@ import UIKit
 
 class Movie: NSObject {
     var title: String
-    var rating: Int
+    var score: String
+    var imdbID: String
+    var year:String
     
+    //get from moviesBD call
+    var rating:String?
+    var summary:String?
+    var poster:UIImage?
 
-    init(title:String, rating:Int) {
+    init(title:String, score:String, imdbID:String, year:String) {
         self.title = title
-        self.rating = rating
+        self.score = score
+        self.imdbID = imdbID
+        self.year = year
+        
     }
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-
 
 }

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource, DAODelegate {
     
     var tableView: UITableView = UITableView()
-    var items: [String] = ["Movie1", "Movie2", "Movie3"]
+    //var items: [String] = ["Movie1", "Movie2", "Movie3"]
     var movieTitle:String!
     var frm: CGRect!
     
@@ -21,8 +21,13 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource 
         // Do any additional setup after loading the view.
         
         self.title = "search results for \"\(movieTitle!)\""
+        DAO.delegate = self
+        
+        
         
         createTableView()
+        tableView.register(UINib.init(nibName: "ResultsTableViewCell", bundle: .main), forCellReuseIdentifier: "cell")
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,19 +48,38 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableView.delegate      =   self
         tableView.dataSource    =   self
         
-        tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "cell")
         
         self.view.addSubview(tableView)
+        
     }
     
     //MARK: Tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return DAO.movies.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:CustomCell = tableView.dequeueReusableCell(withIdentifier: "cell")! as! CustomCell
+        let cell: ResultsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as!ResultsTableViewCell
+        
+        let currentMovie = DAO.movies[indexPath.row]
+        
+        
+        cell.movieTitle.text = currentMovie.title
+        cell.movieTitle.adjustsFontSizeToFitWidth = true
+        
+        cell.yearAndRating.text = "\(currentMovie.year) | PG-13"
+        cell.movieScore.text = "\(currentMovie.score)/3"
+        //cell.movieScore.layer.cornerRadius = 15
+        
+        //async calls to get
+        
+        if currentMovie.score == "0" {
+            cell.testResult.image = UIImage(named: "cancel")
+        } else {
+            cell.testResult.image = UIImage(named: "checked-2")
+        }
         
         
         return cell
@@ -63,14 +87,17 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        let height = (frm.height * 0.20)
-        return height
+        let height = (frm.height * 0.25)
+        return CGFloat(height)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected!")
     }
     
+    func movieFetchComplete() {
+        self.tableView.reloadData()
+    }
     
     
 }

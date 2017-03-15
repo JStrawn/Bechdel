@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         searchField.layer.cornerRadius = 25
         searchField.backgroundColor = UIColor.white
 
+        searchField.text = "The Matrix"
 
         self.view.addSubview(searchField)
     }
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
         let searchButton = UIButton(frame: CGRect(x: x, y: y, width: wide, height: 30))
         searchButton.backgroundColor = UIColor.black
         searchButton.setTitle("Search", for: .normal)
-        searchButton.layer.cornerRadius = 20
+        searchButton.layer.cornerRadius = 15
         searchButton.addTarget(self, action:#selector(self.buttonClicked), for: .touchUpInside)
         
         self.view.addSubview(searchButton)
