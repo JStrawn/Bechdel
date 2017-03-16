@@ -9,14 +9,16 @@
 import UIKit
 
 class Movie: NSObject {
-    var title: String
-    var score: String
-    var imdbID: String
-    var year:String
+    var title: String?
+    var score: String?
+    var imdbID: String?
+    var year:String?
     
     //get from moviesBD call
     var rating:String?
     var summary:String?
+    var genre:String?
+    var imageURL:String?
     var poster:UIImage?
 
     init(title:String, score:String, imdbID:String, year:String) {

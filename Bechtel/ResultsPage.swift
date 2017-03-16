@@ -11,22 +11,27 @@ import UIKit
 class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource, DAODelegate {
     
     var tableView: UITableView = UITableView()
-    //var items: [String] = ["Movie1", "Movie2", "Movie3"]
     var movieTitle:String!
     var frm: CGRect!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //set title & font size
+        let titleAttributes = [
+            NSFontAttributeName: UIFont.systemFont(ofSize: 12)
+        ]
+        self.navigationController?.navigationBar.titleTextAttributes = titleAttributes
         
         self.title = "search results for \"\(movieTitle!)\""
+        
+
+        //reload tableview delegate
         DAO.delegate = self
         
         
-        
         createTableView()
-        tableView.register(UINib.init(nibName: "ResultsTableViewCell", bundle: .main), forCellReuseIdentifier: "cell")
 
     }
     
@@ -37,7 +42,7 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource,
     
     func createTableView() {
         frm = self.view.frame
-
+        
         let wide = frm.width
         let x = frm.minX
         let high = frm.height
@@ -49,6 +54,9 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource,
         tableView.dataSource    =   self
         
         tableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.backgroundColor = UIColor.lightGray
+        
+        tableView.register(UINib.init(nibName: "ResultsTableViewCell", bundle: .main), forCellReuseIdentifier: "cell")
         
         self.view.addSubview(tableView)
         
@@ -64,23 +72,23 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource,
         let cell: ResultsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as!ResultsTableViewCell
         
         let currentMovie = DAO.movies[indexPath.row]
-        
-        
+    
         cell.movieTitle.text = currentMovie.title
         cell.movieTitle.adjustsFontSizeToFitWidth = true
         
-        cell.yearAndRating.text = "\(currentMovie.year) | PG-13"
-        cell.movieScore.text = "\(currentMovie.score)/3"
+        cell.yearAndRating.text = "\(currentMovie.year!) | PG-13"
+        cell.movieScore.text = "\(currentMovie.score!)/3"
         //cell.movieScore.layer.cornerRadius = 15
         
-        //async calls to get
-        
-        if currentMovie.score == "0" {
-            cell.testResult.image = UIImage(named: "cancel")
-        } else {
+        if currentMovie.score == "3" {
             cell.testResult.image = UIImage(named: "checked-2")
+        } else {
+            cell.testResult.image = UIImage(named: "cancel")
         }
         
+        cell.movieSummary.text = currentMovie.summary
+        
+        cell.movieImage.image = currentMovie.poster
         
         return cell
     }
@@ -91,6 +99,7 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource,
         return CGFloat(height)
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected!")
     }
@@ -99,5 +108,5 @@ class ResultsPage: UIViewController, UITableViewDelegate, UITableViewDataSource,
         self.tableView.reloadData()
     }
     
-    
+        
 }

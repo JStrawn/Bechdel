@@ -16,6 +16,7 @@ class ResultsTableViewCell: UITableViewCell {
     @IBOutlet weak var yearAndRating: UILabel!
     @IBOutlet weak var moviePoster: UILabel!
     @IBOutlet weak var testResult: UIImageView!
+    @IBOutlet weak var movieImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

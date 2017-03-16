@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         searchField.layer.cornerRadius = 25
         searchField.backgroundColor = UIColor.white
 
-        searchField.text = "The Matrix"
+        searchField.text = "Bee Movie"
 
         self.view.addSubview(searchField)
     }
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     func createSearchButton() {
         let wide = frm.width * 0.20
         let x = frm.maxX/2 - wide/2
-        let y = frm.height * 0.60
+        let y = frm.height * 0.50
         
         let searchButton = UIButton(frame: CGRect(x: x, y: y, width: wide, height: 30))
         searchButton.backgroundColor = UIColor.black
