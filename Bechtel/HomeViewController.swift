@@ -20,6 +20,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var noMoviesLabel: UILabel!
     @IBOutlet weak var watchlistLabel: UILabel!
     @IBOutlet weak var watchlistImage: UIImageView!
+    @IBOutlet weak var keyboardTapZone: UIView!
     
     var frm: CGRect!
     var movieTitle: String!
@@ -50,7 +51,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         setUpCollectionView()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        keyboardTapZone.addGestureRecognizer(tap)
         
         let watchlistTap = UITapGestureRecognizer(target: self, action: #selector(pushToWatchlistVC))
         let watchlistImageTap = UITapGestureRecognizer(target: self, action: #selector(pushToWatchlistVC))
@@ -105,7 +106,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.isPagingEnabled = true
+        collectionView.isPagingEnabled = false
         collectionView.allowsSelection = true
         
         // register the collectionView cell
@@ -161,14 +162,14 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("tap")
-        let currentMovie = DAO.movies[indexPath.row]
+        let currentMovie = DAO.watchlist[indexPath.section]
         
         let movieDetail = MovieDetailViewController()
         movieDetail.title = currentMovie.title
         movieDetail.currentMovie = currentMovie
         self.navigationController?.pushViewController(movieDetail, animated: true)
 
-    }
+    }    
     
     
     func dismissKeyboard() {

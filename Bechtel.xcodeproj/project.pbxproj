@@ -13,8 +13,8 @@
 		C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */; };
 		C34D25641EDFC03900A5B4C0 /* MyWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */; };
 		C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */; };
+		C34D25671EE099B600A5B4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34D25661EE099B600A5B4C0 /* Assets.xcassets */; };
 		C34ED2AA1E54B660000DFCB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */; };
-		C34ED2B11E54B660000DFCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34ED2B01E54B660000DFCB5 /* Assets.xcassets */; };
 		C34ED2B41E54B660000DFCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34ED2B21E54B660000DFCB5 /* LaunchScreen.storyboard */; };
 		C34ED2BC1E54B718000DFCB5 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2BB1E54B718000DFCB5 /* DAO.swift */; };
 		C34ED2BE1E54C951000DFCB5 /* ResultsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2BD1E54C951000DFCB5 /* ResultsPage.swift */; };
@@ -35,9 +35,9 @@
 		C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
 		C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWatchlistViewController.swift; sourceTree = "<group>"; };
 		C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWatchlistViewController.xib; sourceTree = "<group>"; };
+		C34D25661EE099B600A5B4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34ED2A61E54B65F000DFCB5 /* Bechtel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bechtel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C34ED2B01E54B660000DFCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34ED2B31E54B660000DFCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34ED2B51E54B660000DFCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C34ED2BB1E54B718000DFCB5 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */,
 				C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */,
 				C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */,
-				C34ED2B01E54B660000DFCB5 /* Assets.xcassets */,
 				C34ED2B21E54B660000DFCB5 /* LaunchScreen.storyboard */,
+				C34D25661EE099B600A5B4C0 /* Assets.xcassets */,
 				C34ED2B51E54B660000DFCB5 /* Info.plist */,
 				C3B150A91EDDFCEF008CE78D /* Watchlist.xcdatamodeld */,
 			);
@@ -169,8 +169,8 @@
 				C3087E071E7B295800555F0D /* MovieDetailViewController.xib in Resources */,
 				C34ED2B41E54B660000DFCB5 /* LaunchScreen.storyboard in Resources */,
 				C3B150871EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib in Resources */,
+				C34D25671EE099B600A5B4C0 /* Assets.xcassets in Resources */,
 				C3B150831EDCF890008CE78D /* HomeViewController.xib in Resources */,
-				C34ED2B11E54B660000DFCB5 /* Assets.xcassets in Resources */,
 				C3B150B31EDE1B29008CE78D /* InfoViewController.xib in Resources */,
 				C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */,
 				C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */,
