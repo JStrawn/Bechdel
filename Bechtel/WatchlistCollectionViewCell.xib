@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WatchlistCollectionViewCell" customModule="Bechtel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="331"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="331"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-aO-QWE">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="331"/>
+                    </imageView>
+                    <view opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5c-Fq-Sxh">
+                        <rect key="frame" x="0.0" y="281" width="201" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esm-LM-hrs">
+                                <rect key="frame" x="8" y="1" width="140" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="checked-2" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-v8-H6A">
+                                <rect key="frame" x="156" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XEc-v8-H6A" secondAttribute="height" multiplier="1:1" id="iSL-ca-Xnq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="esm-LM-hrs" firstAttribute="centerY" secondItem="x5c-Fq-Sxh" secondAttribute="centerY" id="Hsh-f0-TcD"/>
+                            <constraint firstAttribute="bottom" secondItem="esm-LM-hrs" secondAttribute="bottom" constant="1" id="OUT-Zk-dvC"/>
+                            <constraint firstItem="XEc-v8-H6A" firstAttribute="centerY" secondItem="x5c-Fq-Sxh" secondAttribute="centerY" id="OWc-mZ-PQa"/>
+                            <constraint firstAttribute="bottom" secondItem="XEc-v8-H6A" secondAttribute="bottom" constant="5" id="R4z-Kw-jNe"/>
+                            <constraint firstItem="XEc-v8-H6A" firstAttribute="leading" secondItem="esm-LM-hrs" secondAttribute="trailing" constant="8" id="Sfc-SG-PzL"/>
+                            <constraint firstItem="esm-LM-hrs" firstAttribute="leading" secondItem="x5c-Fq-Sxh" secondAttribute="leading" constant="8" id="W7z-9b-4PZ"/>
+                            <constraint firstItem="XEc-v8-H6A" firstAttribute="top" secondItem="x5c-Fq-Sxh" secondAttribute="top" constant="5" id="hZF-Yi-56T"/>
+                            <constraint firstItem="esm-LM-hrs" firstAttribute="top" secondItem="x5c-Fq-Sxh" secondAttribute="top" constant="1" id="lh7-hs-x8t"/>
+                            <constraint firstAttribute="trailing" secondItem="XEc-v8-H6A" secondAttribute="trailing" constant="5" id="osN-Dq-yGj"/>
+                            <constraint firstAttribute="width" secondItem="x5c-Fq-Sxh" secondAttribute="height" multiplier="4:1" id="wEG-ma-5Mj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="x5c-Fq-Sxh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AbQ-C9-boA"/>
+                <constraint firstItem="M2q-aO-QWE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EJR-wE-JSt"/>
+                <constraint firstAttribute="bottom" secondItem="x5c-Fq-Sxh" secondAttribute="bottom" id="HWJ-ki-2tc"/>
+                <constraint firstItem="M2q-aO-QWE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TfL-E1-V36"/>
+                <constraint firstAttribute="trailing" secondItem="x5c-Fq-Sxh" secondAttribute="trailing" id="UIh-4O-lxC"/>
+                <constraint firstAttribute="bottom" secondItem="M2q-aO-QWE" secondAttribute="bottom" id="Udo-Wo-VNE"/>
+                <constraint firstAttribute="trailing" secondItem="M2q-aO-QWE" secondAttribute="trailing" id="tEk-3N-UIP"/>
+            </constraints>
+            <size key="customSize" width="201" height="331"/>
+            <connections>
+                <outlet property="moviePoster" destination="M2q-aO-QWE" id="MFf-VD-Ek2"/>
+                <outlet property="movieTitleLabel" destination="esm-LM-hrs" id="QLo-y5-xsG"/>
+                <outlet property="testResultImage" destination="XEc-v8-H6A" id="8NW-7v-GHb"/>
+            </connections>
+            <point key="canvasLocation" x="107.5" y="246.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checked-2" width="512" height="512"/>
+    </resources>
+</document>

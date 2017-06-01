@@ -7,28 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3087E061E7B295800555F0D /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3087E041E7B295800555F0D /* MovieDetailViewController.swift */; };
+		C3087E071E7B295800555F0D /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3087E051E7B295800555F0D /* MovieDetailViewController.xib */; };
 		C32D8AE11E79A3A800E56987 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */; };
 		C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */; };
+		C34D25641EDFC03900A5B4C0 /* MyWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */; };
+		C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */; };
 		C34ED2AA1E54B660000DFCB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */; };
-		C34ED2AC1E54B660000DFCB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2AB1E54B660000DFCB5 /* ViewController.swift */; };
 		C34ED2B11E54B660000DFCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34ED2B01E54B660000DFCB5 /* Assets.xcassets */; };
 		C34ED2B41E54B660000DFCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34ED2B21E54B660000DFCB5 /* LaunchScreen.storyboard */; };
 		C34ED2BC1E54B718000DFCB5 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2BB1E54B718000DFCB5 /* DAO.swift */; };
 		C34ED2BE1E54C951000DFCB5 /* ResultsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34ED2BD1E54C951000DFCB5 /* ResultsPage.swift */; };
+		C3B150821EDCF890008CE78D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B150801EDCF88F008CE78D /* HomeViewController.swift */; };
+		C3B150831EDCF890008CE78D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B150811EDCF890008CE78D /* HomeViewController.xib */; };
+		C3B150861EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B150841EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift */; };
+		C3B150871EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B150851EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib */; };
+		C3B150AB1EDDFCEF008CE78D /* Watchlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B150A91EDDFCEF008CE78D /* Watchlist.xcdatamodeld */; };
+		C3B150B21EDE1B29008CE78D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B150B01EDE1B29008CE78D /* InfoViewController.swift */; };
+		C3B150B31EDE1B29008CE78D /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B150B11EDE1B29008CE78D /* InfoViewController.xib */; };
 		C3B1E0421E5623E000624BAB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1E0411E5623E000624BAB /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3087E041E7B295800555F0D /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		C3087E051E7B295800555F0D /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWatchlistViewController.swift; sourceTree = "<group>"; };
+		C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWatchlistViewController.xib; sourceTree = "<group>"; };
 		C34ED2A61E54B65F000DFCB5 /* Bechtel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bechtel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C34ED2AB1E54B660000DFCB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C34ED2B01E54B660000DFCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34ED2B31E54B660000DFCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34ED2B51E54B660000DFCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C34ED2BB1E54B718000DFCB5 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		C34ED2BD1E54C951000DFCB5 /* ResultsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPage.swift; sourceTree = "<group>"; };
+		C3B150801EDCF88F008CE78D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3B150811EDCF890008CE78D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C3B150841EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchlistCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3B150851EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchlistCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3B150AA1EDDFCEF008CE78D /* Watchlist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Watchlist.xcdatamodel; sourceTree = "<group>"; };
+		C3B150B01EDE1B29008CE78D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C3B150B11EDE1B29008CE78D /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		C3B1E0411E5623E000624BAB /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,16 +82,26 @@
 		C34ED2A81E54B65F000DFCB5 /* Bechtel */ = {
 			isa = PBXGroup;
 			children = (
+				C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */,
 				C34ED2BB1E54B718000DFCB5 /* DAO.swift */,
 				C3B1E0411E5623E000624BAB /* Movie.swift */,
-				C34ED2AB1E54B660000DFCB5 /* ViewController.swift */,
+				C3B150801EDCF88F008CE78D /* HomeViewController.swift */,
+				C3B150811EDCF890008CE78D /* HomeViewController.xib */,
+				C3B150B01EDE1B29008CE78D /* InfoViewController.swift */,
+				C3B150B11EDE1B29008CE78D /* InfoViewController.xib */,
+				C3B150841EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift */,
+				C3B150851EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib */,
 				C34ED2BD1E54C951000DFCB5 /* ResultsPage.swift */,
+				C3087E041E7B295800555F0D /* MovieDetailViewController.swift */,
+				C3087E051E7B295800555F0D /* MovieDetailViewController.xib */,
+				C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */,
+				C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */,
 				C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */,
 				C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */,
-				C34ED2A91E54B660000DFCB5 /* AppDelegate.swift */,
 				C34ED2B01E54B660000DFCB5 /* Assets.xcassets */,
 				C34ED2B21E54B660000DFCB5 /* LaunchScreen.storyboard */,
 				C34ED2B51E54B660000DFCB5 /* Info.plist */,
+				C3B150A91EDDFCEF008CE78D /* Watchlist.xcdatamodeld */,
 			);
 			path = Bechtel;
 			sourceTree = "<group>";
@@ -136,8 +166,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3087E071E7B295800555F0D /* MovieDetailViewController.xib in Resources */,
 				C34ED2B41E54B660000DFCB5 /* LaunchScreen.storyboard in Resources */,
+				C3B150871EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib in Resources */,
+				C3B150831EDCF890008CE78D /* HomeViewController.xib in Resources */,
 				C34ED2B11E54B660000DFCB5 /* Assets.xcassets in Resources */,
+				C3B150B31EDE1B29008CE78D /* InfoViewController.xib in Resources */,
+				C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */,
 				C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,10 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B150AB1EDDFCEF008CE78D /* Watchlist.xcdatamodeld in Sources */,
+				C34D25641EDFC03900A5B4C0 /* MyWatchlistViewController.swift in Sources */,
+				C3B150861EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift in Sources */,
 				C34ED2BC1E54B718000DFCB5 /* DAO.swift in Sources */,
-				C34ED2AC1E54B660000DFCB5 /* ViewController.swift in Sources */,
 				C32D8AE11E79A3A800E56987 /* ResultsTableViewCell.swift in Sources */,
+				C3B150B21EDE1B29008CE78D /* InfoViewController.swift in Sources */,
+				C3B150821EDCF890008CE78D /* HomeViewController.swift in Sources */,
 				C34ED2AA1E54B660000DFCB5 /* AppDelegate.swift in Sources */,
+				C3087E061E7B295800555F0D /* MovieDetailViewController.swift in Sources */,
 				C34ED2BE1E54C951000DFCB5 /* ResultsPage.swift in Sources */,
 				C3B1E0421E5623E000624BAB /* Movie.swift in Sources */,
 			);
@@ -313,6 +353,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3B150A91EDDFCEF008CE78D /* Watchlist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3B150AA1EDDFCEF008CE78D /* Watchlist.xcdatamodel */,
+			);
+			currentVersion = C3B150AA1EDDFCEF008CE78D /* Watchlist.xcdatamodel */;
+			path = Watchlist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C34ED29E1E54B65F000DFCB5 /* Project object */;
 }
