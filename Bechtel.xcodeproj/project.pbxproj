@@ -11,6 +11,8 @@
 		C3087E071E7B295800555F0D /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3087E051E7B295800555F0D /* MovieDetailViewController.xib */; };
 		C32D8AE11E79A3A800E56987 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */; };
 		C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */; };
+		C33E27E21F27F6E5005FF715 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33E27E11F27F6E5005FF715 /* HomeViewController.xib */; };
+		C33E27E41F27F6F0005FF715 /* MyWatchlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33E27E31F27F6F0005FF715 /* MyWatchlistViewController.xib */; };
 		C34D25641EDFC03900A5B4C0 /* MyWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */; };
 		C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */; };
 		C34D25671EE099B600A5B4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34D25661EE099B600A5B4C0 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		C3087E051E7B295800555F0D /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		C33E27E11F27F6E5005FF715 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C33E27E31F27F6F0005FF715 /* MyWatchlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWatchlistViewController.xib; sourceTree = "<group>"; };
 		C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWatchlistViewController.swift; sourceTree = "<group>"; };
 		C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWatchlistViewController.xib; sourceTree = "<group>"; };
 		C34D25661EE099B600A5B4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				C3B1E0411E5623E000624BAB /* Movie.swift */,
 				C3B150801EDCF88F008CE78D /* HomeViewController.swift */,
 				C3B150811EDCF890008CE78D /* HomeViewController.xib */,
+				C33E27E11F27F6E5005FF715 /* HomeViewController.xib */,
 				C3B150B01EDE1B29008CE78D /* InfoViewController.swift */,
 				C3B150B11EDE1B29008CE78D /* InfoViewController.xib */,
 				C3B150841EDCF9C7008CE78D /* WatchlistCollectionViewCell.swift */,
@@ -96,6 +101,7 @@
 				C3087E051E7B295800555F0D /* MovieDetailViewController.xib */,
 				C34D25621EDFC03900A5B4C0 /* MyWatchlistViewController.swift */,
 				C34D25631EDFC03900A5B4C0 /* MyWatchlistViewController.xib */,
+				C33E27E31F27F6F0005FF715 /* MyWatchlistViewController.xib */,
 				C32D8ADF1E79A3A800E56987 /* ResultsTableViewCell.swift */,
 				C32D8AE01E79A3A800E56987 /* ResultsTableViewCell.xib */,
 				C34ED2B21E54B660000DFCB5 /* LaunchScreen.storyboard */,
@@ -168,12 +174,14 @@
 			files = (
 				C3087E071E7B295800555F0D /* MovieDetailViewController.xib in Resources */,
 				C34ED2B41E54B660000DFCB5 /* LaunchScreen.storyboard in Resources */,
+				C33E27E41F27F6F0005FF715 /* MyWatchlistViewController.xib in Resources */,
 				C3B150871EDCF9C7008CE78D /* WatchlistCollectionViewCell.xib in Resources */,
 				C34D25671EE099B600A5B4C0 /* Assets.xcassets in Resources */,
 				C3B150831EDCF890008CE78D /* HomeViewController.xib in Resources */,
 				C3B150B31EDE1B29008CE78D /* InfoViewController.xib in Resources */,
 				C34D25651EDFC03900A5B4C0 /* MyWatchlistViewController.xib in Resources */,
 				C32D8AE21E79A3A800E56987 /* ResultsTableViewCell.xib in Resources */,
+				C33E27E21F27F6E5005FF715 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
